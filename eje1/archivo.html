@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="documento">
+    <div id= "uno" style="background-color: blueviolet;" onclick= "cambiacolor('uno')">soy un cuadrado</div>
+    <div id="dos" style="background-color: crimson;" onclick= "cambiacolor('dos')">soy otro cuadrado</div>
+    <div id="tres" style="background-color: darkgreen;" onclick= "cambiacolor('tres')">soy el ultimo cuadrado</div>
+    
+    <script>
+function cambiacolor(id_elemento){
+    var elemento= document.getElementById(id_elemento);
+    var color_elemento= elemento.style.backgroundColor;
+    document.documentElement.style.backgroundColor = color_elemento;
+
+
+}
+
+    </script>
+
+
+</body>
+</html>
